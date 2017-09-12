@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Login form Demo</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <!--Why this code instead of <meta charset="utf-8">?-->
+	<meta http-equiv="width=device-width,initial-scale=1.0" name="viewport">
+	<link rel="stylesheet" href="./css/login_style2.css">
+</head>
+	
+<body>
+	<div class="container">
+		<div class="login"> <!--this is a separate div so login can be centered relative to container-->
+			<div class="form_header">Please Login:</div>
+			<form>
+				<input type="text" class="txt" id="uname" placeholder="Username or Email"></input><br />
+				<input type="password" class="txt" id="pass" placeholder="Password"></input><br /> <!--How do you add encryption to password? Is this on database side?-->
+				<input type="checkbox" class="chk" id="remember" value="remember" checked><span class="rem">Remember me on this computer.</span></input><!--checked means that checkbox will be automatically checked-->
+				<button type="button" class="btn">Login</button>
+			</form><!--would need script on server to make the form work-->
+			<div class="forgot">
+				<a href="#">Forgot your password?</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
